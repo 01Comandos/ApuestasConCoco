@@ -1,0 +1,1094 @@
+/*
+
+	Proyecto: Apuestas Coco.es
+
+	Maquetado por: @01Comandos
+
+	Fecha: 14/05/2017;
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+/*
+	IMPORTACIONES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+@import 'nib'
+@import 'rslider.styl'
+
+@font-face 
+    font-family 'Uniform-Condensed'
+    src url('../fonts/Uniform-Condensed.otf')
+
+@font-face 
+    font-family 'Uniform-Condensed-Medium'
+    src url('../fonts/Uniform-Condensed-Medium.otf')
+    
+@font-face 
+    font-family 'Whitney-Medium'
+    src url('../fonts/Whitney-Medium.otf')
+    
+@font-face 
+    font-family 'Whitney-Semibold'
+    src url('../fonts/Whitney-Semibold.otf')
+    
+@font-face 
+    font-family 'Whitney-SemiboldItalic'
+    src url('../fonts/Whitney-SemiboldItalic.otf')
+    
+@font-face 
+    font-family 'Whitney-Bold'
+    src url('../fonts/Whitney-Bold.otf')
+
+@font-face 
+    font-family 'Brandon-Medium'
+    src url('../fonts/Brandon_med.otf')
+    
+@font-face 
+    font-family 'Brandon-Bold'
+    src url('../fonts/Brandon_bld.otf')
+    
+@font-face 
+    font-family 'Brandon-Black-It'
+    src url('../fonts/Brandon_blk_it.otf')
+
+/*
+	VARIABLES
+-------------------------------------------------------------------------*/
+gris-claro = #F9FAFC
+gris-texto = #85868a
+
+azul-corporativo = #313840
+azul-search = #0077a8
+gris-plomo = #4e555d
+gris-plomo2 = #a1a6ac
+gris-plomo3 = #787d83
+
+
+rojo-corporativo = #f20032
+verde-corporativo = #6fb72b
+azul-celeste = #32ECEB
+azul-marino = #214196
+purpura = #4D5AFF
+
+
+
+/*
+	MIXINS
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+flex-center()
+	display flex
+	flex-wrap wrap
+	justify-content center
+	
+flex-around()
+	display flex
+	flex-wrap wrap
+	justify-content space-around
+	
+flex-between()
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	
+flex-flexStart()
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	
+flex-end()
+	display flex
+	flex-wrap wrap
+	justify-content flex-end
+	
+
+/*
+	CLASES MADRES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/		
+body
+	font-size 16px
+	margin 0
+	position relative
+	
+h1
+h2
+h3
+h4
+h5
+h6
+	margin 0
+	padding 0
+
+h1
+	font-size 3em
+
+h2
+	
+h3
+	font-size 2em
+	
+h5
+	font-size 0.9em
+
+h6
+	font-size 0.8em
+	color rgba(gris-texto .4)
+			
+p
+	margin 0
+	padding 0
+	font-size 1em
+	
+figure
+	margin 0
+
+ul
+	margin 0
+	padding 0
+	li
+		list-style none
+
+a
+	text-decoration none
+	cursor pointer
+
+
+	
+/**** ESTILOS PLACEHOLDER ****/
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color rgba(gris-texto .7)
+    font-family 'Whitney-Semibold'
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color rgba(gris-texto .7)
+    font-family 'Whitney-Semibold'
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color rgba(gris-texto .7)
+    font-family 'Whitney-Semibold'
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color rgba(gris-texto .7)
+    font-family 'Whitney-Semibold'
+}	
+
+
+.grid
+	width 60em
+	margin 0 auto
+	
+.hiden
+	display none
+	
+
+
+/*
+	INDEX
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+header
+	background azul-corporativo
+	height 6.45em
+	position relative
+	z-index 4
+	flex-flexStart()
+	.logo
+		width 240px
+		a
+			display inline-block
+			img
+				width 100%
+				
+	.header-contain
+		width calc(100% - 240px)
+		
+		.contain-one
+			position relative
+			.form-search
+				width calc(100% - 336px)
+				margin 1.3em 0 .7em 0
+				input
+					font-size .9em
+					padding .5em
+					width 100%
+					background-image url(../img/search-icon-2.png)
+					background-position right bottom
+					background-repeat no-repeat
+					
+			/.form-search-mobile
+				width 77%
+				display none
+				padding 1.5em 0
+				margin 0 auto
+				position relative
+				input
+					font-size .9em
+					padding .6em
+					width 100%
+					height 2em
+					background-image url(../img/search-icon-2.png)
+					background-position right
+					background-repeat no-repeat
+					border 0
+					border-radius 2px
+					
+				.link
+					position absolute
+					top 2em
+					right -3em
+					a
+						display inline-block
+						width 1em
+						img
+							width 100%
+					
+			&-option
+				position absolute
+				height 6.4em
+				width 291px
+				top -1.3em
+				right 0
+				background gris-plomo2
+				text-align center
+				figure
+					width 5em
+					margin 1em auto 0 auto
+					img
+						width 100%
+						
+				p
+					color white
+					font-family 'Brandon-Bold'
+					text-transform uppercase
+					font-size .7em
+				
+				&:before
+					content ""
+					position absolute
+					bottom 0
+					top 0
+					left -1.1em
+					border-left 1.2em solid transparent
+					border-bottom 6.4em solid gris-plomo2
+					
+			.house
+				p
+					font-family 'Brandon-Black-It'
+					
+			.record
+				display none
+				
+		nav
+			background gris-plomo
+			padding .5em .8em .5em 1em
+			width calc(100% - 348px)
+			max-height 1.2em
+			overflow hidden
+			ul
+				position relative
+				flex-flexStart()
+				li
+					padding-bottom .3em
+					margin-right 1.875em
+					margin-bottom .5em
+					a
+						display inline-block
+						color #a1a6ac
+						font-size .8em
+						text-transform uppercase
+						transition .2s linear
+						p
+							font-family 'Brandon-Black-It'
+						&:hover
+							color white
+						
+					&:last-child
+						margin-right 0
+						
+					&.active
+						border-bottom 3px solid rojo-corporativo
+						a
+							color white
+						
+					&.nav-arrow
+						width .65em
+						position absolute
+						top .0em
+						right .2em
+						a
+							display inline-block
+							img
+								width 100%
+								
+
+.main
+	font-size 0
+	position relative
+	z-index 3
+	flex-flexStart()
+	
+	&-menu
+		font-size 16px
+		background gris-plomo3
+		width 240px
+		border-top 2px solid rojo-corporativo
+		li
+			background azul-corporativo
+			border-bottom 0.1px solid rgba(255, 255, 255, 0.33)
+			//height 32px
+			a
+				padding .3em
+				color white
+				flex-flexStart()
+				figure
+					img
+						width 100%
+					&:nth-child(1)
+						width 1.2em
+						padding-left .5em
+						
+					&:last-child
+						position relative
+						top .2em
+						
+				p
+					font-family 'Whitney-Medium'
+					font-size .9em
+					padding-left .6em
+					width 67%
+					white-space nowrap
+					overflow hidden
+					text-overflow ellipsis
+					margin-right .7em
+					
+				&:hover
+					background #3f464d
+					
+			ul
+				height auto
+				li
+					background #616870
+					a
+						padding .3em .3em .3em .7em
+						flex-flexStart()
+						figure
+							img
+								width 100%
+							&:nth-child(1)
+								width 1.3em
+								
+							&:last-child
+								width .6em
+								position relative
+								top .2em
+						p
+							font-size .8em
+							padding-top .2em
+							
+					&:hover
+						background #a0a4a9
+						
+				.li-standard
+					a
+						display flex
+						p
+							&:nth-child(2)
+								width 50%
+								margin-right 0
+								
+							&:nth-child(3)
+								margin-left auto
+								margin-right 0
+								width 2.5em
+						
+						figure	
+							&:last-child
+								margin-right 1em
+								
+							
+				.destacados
+					background #4e555d
+							
+				.separador
+					a
+						background #f4f4fd
+						figure	
+							&:last-child
+								width .9em
+								left -.2em
+						p
+							color #444444
+							font-size .9em
+						&:hover
+							background white
+						
+	&-body
+		font-size 16px
+		background rgba(gris-plomo .1)
+		width calc(100% - 560px)
+		
+		&-slideContain
+			margin .7em .7em
+			flex-between()
+			
+			.rslides_container
+				width calc(100% - 240px)
+				.rslides
+					height 100%
+					li 
+						height 100%
+						width auto !important
+						img
+							height 100%
+							width auto !important
+				
+			.tournaments
+				width 230px
+				box-shadow 0px -1px 10px 0px rgba(0,0,0,0.1)
+				background white
+				ul
+					li
+						border-top 1px solid #dedede
+						a
+							padding .7em .7em .7em 1.4em
+							transition .2s linear
+							flex-flexStart()
+							figure
+								width 1.5em
+								margin-right 1em
+								img
+									width 100%
+									
+							.date
+								padding-top .1em
+								width 75%
+								p
+									font-family 'Whitney-SemiboldItalic'
+									color #313840
+									width 100%
+									white-space nowrap
+									overflow hidden
+									text-overflow ellipsis
+									
+								span
+									font-family 'Whitney-Bold'
+									font-size .8em
+									color verde-corporativo
+									display block
+									
+							&:hover
+								background rgba(gris-plomo .2)
+				
+		&-tableContainer
+			margin 0 .7em 1.2em .7em
+			box-shadow 0px -1px 10px 0px rgba(0,0,0,0.1)
+			/.title
+				background white
+				flex-between()
+				h3
+					padding .9em 0 0.7em 1em
+					font-size 1em
+					color #313840
+					font-family 'Uniform-Condensed-Medium'
+					text-transform uppercase
+					
+				&-icon
+					background verde-corporativo
+					padding .5em 2em
+					position relative
+					img
+						width 1.6em
+					&:before
+						content ""
+						position absolute
+						bottom 0
+						top 0
+						left -.6em
+						border-left .6em solid transparent
+						border-bottom 2.8em solid verde-corporativo
+						
+			table
+				width 100%
+				border-spacing 0 !important
+				thead
+					background #f8f8f8
+					tr
+						border 1px solid #dedede !important
+						th
+							color rojo-corporativo
+							font-family 'Uniform-Condensed-Medium'
+							height 26px
+						
+						.table-title
+							background verde-corporativo
+							padding .5em .6em .5em 1em
+							width 18em
+							position relative
+							flex-flexStart()
+							p
+								color white
+								transition .2s linear
+								font-family 'Uniform-Condensed-Medium'
+								text-transform uppercase
+								font-size .9em
+								margin .3em 1em 0 0
+							a
+								p
+									&:hover
+										color #363b42
+										
+							.flat
+								width 1.1em
+								margin .3em
+								position relative
+								img
+									width 100%
+									
+							.arrow-white
+								width 5px
+								position relative
+								top .2em
+								img
+									width 100%
+									
+							.link
+								margin-left 1em
+								width 61%
+								text-align left
+								p
+									width 100%
+									white-space nowrap
+									overflow hidden
+									text-overflow ellipsis	
+								
+							
+							&:after
+								content ""
+								position absolute
+								bottom 0
+								top 0
+								right -.8em
+								border-left .8em solid verde-corporativo
+								border-bottom 2.5em solid transparent
+								
+				tbody
+					tr
+						background white
+						cursor pointer
+						td
+							padding .6em
+							text-align center
+							border 1px solid #dedede
+							height 30px
+							p
+								margin-top .2em
+								font-size .9em
+								font-family 'Uniform-Condensed-Medium'
+							strong
+								color #363b42
+								transition .2s linear
+								font-size .8em
+								margin 0.3em .4em 0 .4em
+								font-family 'Uniform-Condensed-Medium'
+								
+							.active
+								color rojo-corporativo
+								background none
+									
+							&:hover
+								background rgba(gris-plomo .1)
+									
+								h4
+									color white
+									background rojo-corporativo
+								
+							&:nth-child(1)
+								text-align left
+								flex-flexStart()
+								p
+									max-width 30%
+									white-space nowrap
+									overflow hidden
+									text-overflow ellipsis
+									
+							&:nth-child(2)
+							&:nth-child(3)
+							&:nth-child(4)
+								width 80px
+								&:hover
+									color white
+									background verde-corporativo
+							
+					.special
+						td
+							position relative
+							h4
+								font-size .7em
+								font-family 'Uniform-Condensed-Medium'
+								color rojo-corporativo
+								border 1px solid rojo-corporativo
+								padding .4em .8em
+								text-transform uppercase
+								position absolute
+								top 1.1em
+								right 1em	
+								
+							&.td-active
+								border-left 0 !important
+								border-right 0 !important
+								
+							&.null-1
+								border-right 0
+								
+							&.null-2
+								border-left 0		
+								
+	&-ticket
+		font-size 16px
+		width 320px
+		background gris-plomo3
+		.ticketMain
+			margin 1.2em .7em .7em .7em
+			background white
+			padding 1.2em 0
+			position relative
+			
+			&-tabs
+				flex-between()
+				li
+					width 48%
+					a
+						color rgba(gris-texto .6)
+						text-transform uppercase
+						padding .6em
+						transition .2s linear
+						p
+							font-family 'Whitney-Medium'
+							text-align center
+						&:hover
+							color rojo-corporativo
+							
+					&:nth-child(1)
+						border-right 1px dashed rgba(gris-plomo .3)
+						
+				.active
+					border-bottom 4px solid verde-corporativo
+					a
+						color verde-corporativo
+					
+			.ticket-null
+				.active
+					border-bottom 2px solid rojo-corporativo
+					a
+						color gris-texto
+				
+			.containInfo-simples			
+
+				/.messageTicket-null
+					padding 6em 1.5em 5em 1.5em
+					text-align center
+					background-image url('../img/bg-logo.png')
+					background-position center
+					background-repeat no-repeat
+					background-size contain
+					
+					h4
+						font-size 1.4em
+						color black
+						text-transform uppercase
+						font-family 'Brandon-Bold'
+						margin-bottom .3em
+						
+					p
+						font-size .9em
+						color rgba(gris-texto .8)
+						line-height 1.3em
+						
+
+				/.apuestasSimples
+					padding-top .5em
+					
+					.bet-container
+						padding-top .8em
+						li
+							border-left 6px solid transparent
+							transition .2s linear
+							padding 0 .9em
+							margin-bottom 1.5em
+							.zone-1
+								margin-bottom .3em
+								flex-between()
+								.tooltip
+									position relative
+									width 1.5em
+									z-index 4
+									figure
+										position relative
+										img
+											position absolute
+											top 0
+											left 0
+											&:nth-child(2)
+												display none
+												
+									.text
+										background white
+										padding .2em
+										width 13.5em
+										box-shadow 0px -1px 10px 0px rgba(0,0,0,0.1)
+										border 2px solid rojo-corporativo
+										position absolute
+										top .8em
+										left .5em
+										display none
+										p 
+											font-size .8em
+											font-family 'Whitney-Medium'
+											color #a1a6ac
+											width 100%
+											overflow initial
+											white-space initial
+											
+									&:hover
+										cursor pointer
+										figure img
+											&:nth-child(1)
+												display none
+											&:nth-child(2)
+												display block
+										.text
+											display block
+								p
+									width 77%
+									white-space nowrap
+									overflow hidden
+									text-overflow ellipsis
+									font-size .9em
+									color #d1d8df
+									font-family 'Uniform-Condensed-Medium'
+									
+								.indicators
+									width 20%
+									position relative
+									flex-between()
+									.link
+										position absolute
+										top 0
+										left 0
+										a
+											img
+												width 2em
+												
+										/.btn-disable
+											display none
+												
+									.close
+										position absolute
+										top 0.1em
+										right 0
+												
+							.zone-2
+								flex-flexStart()
+								h4
+									width 194px
+									white-space nowrap
+									overflow hidden
+									text-overflow ellipsis
+									font-family 'Uniform-Condensed-Medium'
+									font-size 1.25em
+									color #4e555d
+									margin-right .3em
+									
+								p
+									font-size 1.25em
+									color verde-corporativo
+									font-family 'Uniform-Condensed'
+									
+							/.zone-3
+								padding-top .3em
+								border-bottom 1px dashed #dfe1e5
+								padding-bottom .9em
+								flex-between()
+								.one
+									width 187px
+									.select-house
+										position relative
+										.selected
+											a
+												flex-flexStart()
+												figure
+													width 127px
+													height 22px
+													img
+														width 100%
+												.arrow
+													width 23px
+													img
+														width 100%
+														
+										.bet-house
+											background white
+											padding 0
+											position absolute
+											left 0
+											top 1.5em
+											right -4.1em
+											z-index 4
+											li
+												padding 0
+												border-left 0
+												margin-bottom 0
+												border 1px solid #dbe0e4
+												height 22px
+												a
+													transition .2s linear
+													flex-flexStart()
+													figure
+														width 50.5%
+														height 22px
+														img
+															width 100%
+															
+													.data
+														width 49.5%
+														position relative
+														flex-between()
+														p
+															width 77%
+															text-align center
+															color verde-corporativo
+															font-size 1em
+															font-family 'Uniform-Condensed'
+															margin-top .2em
+															
+														.check
+															margin-right .5em
+															position absolute
+															top 0
+															right 0
+															
+														/.check-on
+															display none
+													&:hover
+														background verde-corporativo
+														p
+															color white
+											
+											
+									/.btn-submit
+										a
+											display inline-block
+											font-size .9em
+											font-family 'Brandon-Medium'
+											color white
+											background #d1d8df
+											text-transform uppercase
+											transition .2s linear
+											text-align center
+											width 84%
+											padding .2em .3em
+											&:hover
+												background verde-corporativo
+										
+								.two
+									width 75px
+									h4
+										font-size 1.2em
+										font-family 'Uniform-Condensed'
+										width 59px
+										border 1px solid #dbe0e4
+										text-align right
+										padding-right .2em
+										margin-bottom .3em
+									p
+										font-size .95em
+										font-family 'Uniform-Condensed'
+										
+							&:hover
+								border-left 6px solid verde-corporativo
+								
+						&.combinadas
+							li
+								.zone-1
+									p
+										width 60%
+								
+					.resumenSimple
+						background white
+						padding-top 1em
+						text-align center
+						flex-between()
+						h4
+							
+							width 100%
+							text-transform uppercase
+							color #b5bbc1
+							font-size .7em
+							font-family 'Brandon-Bold'
+							
+						.zone-3
+							width 90%
+							margin .6em auto 0 auto
+							.two
+								p
+									font-size 1.25em
+									color verde-corporativo
+									font-family 'Uniform-Condensed'
+							
+						.selecciones
+							width 45%
+							border-right 1px dashed #dbe0e4
+							padding .5em .5em .8em .5em
+							h3
+								font-size 1.875em
+								font-family 'Uniform-Condensed'
+								color #647994
+								
+							p
+								text-transform uppercase
+								color #9baaba
+								font-family 'Brandon-Bold'
+								font-size .7em
+								margin-top -.3em
+							
+						.total
+							width 43%
+							padding .5em .5em .8em .5em
+							h4
+								font-size 1.2em
+								font-family 'Uniform-Condensed'
+								width 59px
+								border 1px solid #dbe0e4
+								text-align right
+								padding-right .2em
+								color #647994
+								margin 0 auto .3em auto
+							p
+								font-size .95em
+								font-family 'Uniform-Condensed'
+								color #647994
+							
+							
+						.btn-submit
+							border-top 1px dashed #dbe0e4
+							width 100%
+							padding-top 1em
+							padding-bottom .4em
+							a
+								background verde-corporativo
+							
+							
+							
+			&:before
+				content ""
+				position absolute
+				background-image url('../img/Recorte-superior.png')
+				background-position top
+				background-repeat no-repeat
+				background-size cover
+				top -.6em
+				right 0
+				left 0
+				height 2em
+				
+			&:after
+				content ""
+				position absolute
+				background-image url('../img/Recorte-inferior.png')
+				background-position bottom
+				background-repeat no-repeat
+				background-size cover
+				bottom -.6em
+				right 0
+				left 0
+				height 2em
+
+
+footer
+	background white
+	padding 1em
+	position relative
+	.footer-contain
+		position relative
+		z-index 4
+		flex-between()
+		&-logo
+			width 8em
+			img
+				width 100%
+				
+		ul
+			padding-top .7em
+			flex-end()
+			li
+				margin-right 1.5em
+				a
+					color gris-texto
+					transition .2s linear
+					p
+						font-size 'Brandon-Bold'
+						font-size .8em
+						text-transform uppercase
+					&:hover
+						color black
+				&:last-child
+					margin-right 0
+					
+	.bg-water
+		width 20em
+		position absolute
+		right 0
+		bottom -.2em
+		z-index 3
+		img
+			width 100%
+			
+
+.disable-bet
+	opacity 0.4
+	.zone-2
+	.zone-3
+		pointer-events none
+		
+.checked 
+	.check.check-on
+		display: block;
+		
+
+#bet-combinada
+	display none
+
+
+	
+
+
+
+/*
+	TRANSICIONES GENERALES
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+.show 
+	transition all .5s
+	nav
+		height auto !important
+
+
+.collapsible-body
+	display: none;
+
+
+.collapsible-body.loaded
+	overflow: hidden;
+	-webkit-transition: property duration timing-function delay;
+	-moz-transition: property duration timing-function delay;
+	transition: property duration timing-function delay;
+
+
+		
+@import 'media-queries.styl'    			

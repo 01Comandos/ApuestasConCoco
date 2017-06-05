@@ -1,0 +1,1 @@
+Tiene un tamañno máxino de 1090px (en resolución de 1920px) y un mínimo de 670px. Según la pantalla se hace más pequeña se va reduciendo acorde a ella

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>GU@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="21" height="15" rx="1.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#DE3149" offset="0%"></stop>
+            <stop stop-color="#C2273D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#053B94" offset="0%"></stop>
+            <stop stop-color="#002E7A" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="0" y="0" width="21" height="15" rx="1.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.12 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#DE3149" offset="0%"></stop>
+            <stop stop-color="#C2273D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M11.5,13 C11.5,13 14.5,10.9852814 14.5,8.5 C14.5,6.01471863 11.5,4 11.5,4 C11.5,4 8.5,6.01471863 8.5,8.5 C8.5,10.9852814 11.5,13 11.5,13 Z" id="path-10"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M2.5,8.5 C2.5,8.5 5,6.5 5,4.5 C5,2.5 2.5,0.5 2.5,0.5 C2.5,0.5 7.6540425e-17,2.5 0,4.5 C7.65404249e-17,6.5 2.5,8.5 2.5,8.5 Z" id="path-12"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-14">
+            <stop stop-color="#81C1F4" offset="0%"></stop>
+            <stop stop-color="#6AB1E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#26A07E" offset="0%"></stop>
+            <stop stop-color="#1F9171" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-16">
+            <stop stop-color="#1E8CE8" offset="0%"></stop>
+            <stop stop-color="#107FDC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-17">
+            <stop stop-color="#FFF148" offset="0%"></stop>
+            <stop stop-color="#FFEF36" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-18">
+            <stop stop-color="#8F5714" offset="0%"></stop>
+            <stop stop-color="#7A480D" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-19" points="10 8.5 11 10 10 10"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-20">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Flag-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GU">
+            <g id="AE-Copy-4" transform="translate(1.000000, 1.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <rect id="Mask-Copy" fill="url(#linearGradient-5)" mask="url(#mask-3)" x="0" y="0" width="21" height="15"></rect>
+                <rect id="Rectangle-1568" fill="url(#linearGradient-6)" mask="url(#mask-3)" x="1" y="1" width="19" height="13" rx="1"></rect>
+                <g id="Depth" mask="url(#mask-3)" fill-opacity="1" fill="black">
+                    <use filter="url(#filter-8)" xlink:href="#path-7"></use>
+                </g>
+            </g>
+            <g id="Oval-226">
+                <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+            </g>
+            <g id="Group" transform="translate(9.000000, 4.000000)">
+                <mask id="mask-13" fill="white">
+                    <use xlink:href="#path-12"></use>
+                </mask>
+                <use id="Oval-226-Copy" fill="url(#linearGradient-1)" xlink:href="#path-12"></use>
+                <rect id="Rectangle-1248" fill="url(#linearGradient-14)" mask="url(#mask-13)" x="0" y="0" width="5" height="5"></rect>
+                <polygon id="Star-113" fill="url(#linearGradient-15)" mask="url(#mask-13)" points="2.5 4.1 1.61832212 4.71352549 1.92936609 3.6854102 1.07341523 3.03647451 2.14732885 3.0145898 2.5 2 2.85267115 3.0145898 3.92658477 3.03647451 3.07063391 3.6854102 3.38167788 4.71352549"></polygon>
+                <rect id="Rectangle-1248-Copy" fill="url(#linearGradient-16)" mask="url(#mask-13)" x="0" y="5" width="5" height="4"></rect>
+                <path d="M0,6 C0,6 1.59041341,7.5 2,7.5 C2.48819721,7.5 2.49579714,6.77674717 3,6.5 C3.79409087,6.06413893 5,6 5,6 L5,9 L0,9 L0,6 Z" id="Rectangle-1248-Copy-2" fill="url(#linearGradient-17)" mask="url(#mask-13)"></path>
+            </g>
+            <path d="M11.5,7.5 C11.5,7.5 11.3455851,9.03675537 11.5,9.5 C11.6789185,10.0367554 12.5,10.5 12.5,10.5" id="Line" stroke="url(#linearGradient-18)" stroke-width="0.5" stroke-linecap="round"></path>
+            <g id="Rectangle-1251">
+                <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>NF</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="21" height="15" rx="1.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#219646" offset="0%"></stop>
+            <stop stop-color="#197837" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="6" y="0" width="9" height="15"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="0.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="0" y="0" width="21" height="15" rx="1.5"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="-0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.12 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#259D4B" offset="0%"></stop>
+            <stop stop-color="#197837" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flag-Kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NF">
+            <g id="BE-Copy-9" transform="translate(1.000000, 1.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <rect id="Mask" fill="url(#linearGradient-5)" mask="url(#mask-3)" x="10" y="0" width="11" height="15"></rect>
+                <rect id="Rectangle-2" fill="url(#linearGradient-5)" mask="url(#mask-3)" x="0" y="0" width="7" height="15"></rect>
+                <g id="Rectangle-2-Copy" mask="url(#mask-3)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <g id="Depth" mask="url(#mask-3)" fill-opacity="1" fill="black">
+                    <use filter="url(#filter-9)" xlink:href="#path-8"></use>
+                </g>
+            </g>
+            <path d="M10.4435697,5.00314907 L10.8655891,3.48387909 C10.9398222,3.21664005 11.2319336,3 11.5,3 C11.7761424,3 12.0617981,3.22247314 12.1344109,3.48387909 L12.5564303,5.00314907 C12.5379075,5.00106855 12.5190785,5 12.5,5 C12.2238576,5 12,5.22385763 12,5.5 C12,5.77614237 12.2238576,6 12.5,6 C12.6146332,6 12.7202562,5.96142319 12.8045953,5.89654341 L13.1147885,7.01323896 C13.0779303,7.00458037 13.0395,7 13,7 C12.7238576,7 12.5,7.22385763 12.5,7.5 C12.5,7.77614237 12.7238576,8 13,8 C13.1359508,8 13.2592288,7.94574132 13.3493604,7.85769757 L13.6754588,9.0316521 C13.6208644,9.01118985 13.561739,9 13.5,9 C13.2238576,9 13,9.22385763 13,9.5 C13,9.77614237 13.2238576,10 13.5,10 C13.6587644,10 13.800246,9.92600331 13.8918379,9.81061681 L14.4999999,12 L12,12 L12,14 L11,14 L11,12 L8.49999999,12 L9.10816202,9.81061671 C9.19975388,9.92600327 9.34123551,10 9.5,10 C9.77614237,10 10,9.77614237 10,9.5 C10,9.22385763 9.77614237,9 9.5,9 C9.438261,9 9.37913553,9.01118987 9.32454107,9.03165214 L9.65063958,7.85769751 C9.74077116,7.94574129 9.86404918,8 10,8 C10.2761424,8 10.5,7.77614237 10.5,7.5 C10.5,7.22385763 10.2761424,7 10,7 C9.96049994,7 9.92206968,7.00458038 9.88521139,7.01323897 L10.1954046,5.89654338 C10.2797438,5.96142318 10.3853668,6 10.5,6 C10.7761424,6 11,5.77614237 11,5.5 C11,5.22385763 10.7761424,5 10.5,5 C10.4809215,5 10.4620925,5.00106855 10.4435697,5.00314907 Z" id="Combined-Shape" fill="url(#linearGradient-10)"></path>
+        </g>
+    </g>
+</svg>

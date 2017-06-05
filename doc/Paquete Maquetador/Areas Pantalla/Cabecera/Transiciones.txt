@@ -1,0 +1,10 @@
+> 1550 Se colpasa el cupón en la cabecera
+> 900 Se colapsa el buscador en botón en la cabecera
+
+En la subcabecera tener en cuenta que se requiere un espacio de 30px entre el último deporte y el icono de despliegue.
+
+Hay que resaltar que la parte superior derecha tiene siempre un tamaño fijo, en las tres configuraciones posibles. Sea:
+
+1) Resolución > 1550px : Se muestra únicamente las casas de apuestas (315px).
+2) 1550px > Resolución > 900px : Se muestran cupón y casas de apuestas, ocupando el mismo espacio pero repartiendolo entre ambos elementos como se muestra en la imagen (315px).
+3) 900px > Resolución : Se muestra lo mismo y de la misma manera que en el punto 2 y se agrega un botón de busqueda. El tamaño es fijo por un total de 450px.

@@ -1,0 +1,6 @@
+> 1800 Se apilan los eventos
+> 1550 Se elimina el cupón y aparece arriba un icono de acceso
+> 1170 Se elimina "Torneos Top"
+> 1080 Se elimina la navegación izquierda
+> 900 Se colapsa el buscador en botón
+> 690 No se puede hacer mas pequeño. Se hace scroll horizontal

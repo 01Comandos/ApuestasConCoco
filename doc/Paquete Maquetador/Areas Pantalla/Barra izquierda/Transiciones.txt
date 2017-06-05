@@ -1,0 +1,1 @@
+El tamaño es fijo (240px), cuando el tamaño de pantalla baja de 1080, la barra desaparece

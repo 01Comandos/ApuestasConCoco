@@ -1,0 +1,1 @@
+Tiene un tamaño fijo de 230px. Cuando la resolución de pantalla desciende de 1170px, desaparece.

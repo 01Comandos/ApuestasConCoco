@@ -1,0 +1,1 @@
+El cupón es fijo y ocupa 310px de ancho y la barra con los 10px de margen a cada lado ocupa un total de 330px. Es de tamaño fijo y se muestra hasta que la pantalla reduce de 1550px, momento en el que se colapsa en la cabecera
